@@ -1,1 +1,0 @@
-Practicing Full Stack
