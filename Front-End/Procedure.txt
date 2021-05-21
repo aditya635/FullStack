@@ -1,0 +1,7 @@
+1. git pull origin master
+2. do anything
+3. git add .
+4. git commit -m "Name"
+5. git push origin master
+ 
+Chup chaap hilao aur so jaao
