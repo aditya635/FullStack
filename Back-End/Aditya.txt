@@ -1,1 +1,32 @@
-PAPA
+my page first folder is the project
+the sub folder is the configurations for the project
+challenges is an app for that project[different features diffrent apps]
+
+django-admin startproject mypage->to make the intials files and configs
+python manage.py runserver->to run server
+python manage.py startapp challenges->make new app
+in configurations wide folder of project 
+
+->asgi and wsgi is related to deployment of the project
+->urls for managing multiple url
+
+challengess app->
+
+->admin for admin view
+->models for DB
+->tests.py for automated testing
+->views.py what we wanna show to users(most important for now)
+
+Made the challenge project
+made a function in view.py which holds the views and HttpResponse is basically
+sending a reponse back to browser after recieving request
+Sent a string back without using a query in the function
+
+Created urls.py in app made a list and import views.py so that we can call 
+the view's function for a request we get set path variable in list which 
+holds the urls
+
+now we have to connect both urlconfigs in app 
+and config folder(monthly_challenges) also use include from urls
+1)use path in config folder in urls.py to call challenges app
+the include the urls.py file of that app with include to include all urls
