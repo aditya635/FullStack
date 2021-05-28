@@ -30,3 +30,12 @@ now we have to connect both urlconfigs in app
 and config folder(monthly_challenges) also use include from urls
 1)use path in config folder in urls.py to call challenges app
 the include the urls.py file of that app with include to include all urls
+
+instead of physically setting up all urls we dynamically set it up
+we can make a dictionary and when we get month as a string request 
+parameter we use it to access the dictionary 
+
+we use reverse in django to access the name we give to a route/url
+in urls.py of the app we use this in the views for redirection to a url as
+if we change the config url the things in redirection won't work as hardcoded
+so we use reverse function and pass a vaue in args to get to a specific page
