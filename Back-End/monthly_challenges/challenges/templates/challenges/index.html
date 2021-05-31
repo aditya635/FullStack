@@ -1,0 +1,12 @@
+{%extends "base.html" %}
+    {%block pagetitle%}
+    ALL CHALLENGES
+    {%endblock%}
+     {%block content%}
+    <ul>
+        {% for month in forward %}
+        <li><a href="{% url 'dad' month=month %}">{{month}} </a></li>
+        {% endfor %}
+
+    </ul>>
+{%endblock%}

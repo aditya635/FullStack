@@ -39,3 +39,48 @@ we use reverse in django to access the name we give to a route/url
 in urls.py of the app we use this in the views for redirection to a url as
 if we change the config url the things in redirection won't work as hardcoded
 so we use reverse function and pass a vaue in args to get to a specific page
+we also use this to access the path for a specific url and add it to href in an 
+anchor tag
+
+Method 1
+TO use templates we make templates folder in an app folder then in that folder we make another folder with app name
+and we keep html files there then we go to setting in project config folder
+to include that in dirs and use Base dir which points to monthly challenges project wide folder
+and use it to point to the templates folder because if we dont then django 
+won't recognise where to search for templates folderand now in views we can use 
+render_to_string to convert html to string and send it back
+
+Method 2 to acheive the same thing of loading up our html and that django can recognise our app folder and templates
+folder by itself we need to change installed apps in setting and add app name there for using templetes that we
+store in a specific app 
+
+to acces a global templates file we have to go with method 1 generally it 
+can also be used for both things
+
+DTL-Enhanced HTML language to create customized dynamic response
+we send a dictionary with variables as keys in render() and use the variables in html file to display the desired text
+the pipe symbol is used for formatting the data we get in html through dtl
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL CHALLENGES</title>
+</head>
+<body>
+    <ul>
+        {% for month in forward %}              we created a block of for to repeat the tags and we can use{{}} anywhere see how month is use
+                                                endfor to end the for tag
+        <li><a href="/challenges/{{month}}">{{month}} </a></li>
+        {% endfor %}
+    </ul>>
+</body>
+</html>
+  {% for month in forward %}
+        <li><a href="{% url 'dad' month=month %}">{{month}} </a></li> here we use month the dynamic element =month the for block
+        {% endfor %}
+
+learn if tags and block tags and used a global templates file and use inheritance to 
+directly paste data on that
