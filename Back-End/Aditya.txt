@@ -84,3 +84,6 @@ the pipe symbol is used for formatting the data we get in html through dtl
 
 learn if tags and block tags and used a global templates file and use inheritance to 
 directly paste data on that
+
+learnt some shit about how to use tags and use nav bar to navigate and how to refrence it and we can use "with" in url tag
+to send specific data to the header.html 

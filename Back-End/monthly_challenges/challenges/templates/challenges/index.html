@@ -1,7 +1,11 @@
 {%extends "base.html" %}
-    {%block pagetitle%}
+{%load static%}
+{%block css_files%}
+<link rel="stylesheet" href="{% static "challenges/challenges.css" %}">
+{%endblock%}
+{%block pagetitle%}
     ALL CHALLENGES
-    {%endblock%}
+{%endblock%}
      {%block content%}
     <ul>
         {% for month in forward %}

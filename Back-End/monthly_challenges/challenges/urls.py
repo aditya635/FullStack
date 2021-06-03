@@ -9,6 +9,6 @@ urlpatterns = [
   path("<str:month>",views.monthly_challenge, name="dad")#value added here with str: should be used as a string
   #now to give something for only the /challenges and no extra request parameter with it
   ,
-  path("",views.index)
+  path("", views.index, name="bro")
  
 ]

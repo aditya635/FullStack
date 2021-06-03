@@ -1,6 +1,6 @@
 from django.http.response import HttpResponseNotFound
 from django.shortcuts import render
-from django.http import HttpResponse, HttpResponseRedirect
+from django.http import HttpResponse,HttpResponseRedirect,Http404
 from django.urls import reverse 
 from django.template.loader import render_to_string
 
@@ -37,7 +37,7 @@ def monthly_challenge(request,month):
         #return render(request, "challenges/challenge.html" ) can't send dynamic data without 3rd arguement
         return render(request, "challenges/challenge.html", {"text" : vro, "dad": month} )
     except:
-        return HttpResponseNotFound("<h1>Shit ain't found!</h1>")
+        raise Http404()
 
 
 def monthly_challenges(request,month):
