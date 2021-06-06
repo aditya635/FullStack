@@ -86,4 +86,10 @@ learn if tags and block tags and used a global templates file and use inheritanc
 directly paste data on that
 
 learnt some shit about how to use tags and use nav bar to navigate and how to refrence it and we can use "with" in url tag
-to send specific data to the header.html 
+to send specific data to the header.html  Also how we add navbar to base.html for whole project and how to use direct .com/ 
+by changing urls.py in proj config
+
+
+We create DB and define table in class in models.py then we makemigrations to add query and make shit in db in migrations folder using makemigrations
+and then we migrate to run those migrations to set the structure of a class in place but we dont need to run migrations again for just adding a function
+if we change the DB shit
