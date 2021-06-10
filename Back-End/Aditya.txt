@@ -92,4 +92,28 @@ by changing urls.py in proj config
 
 We create DB and define table in class in models.py then we makemigrations to add query and make shit in db in migrations folder using makemigrations
 and then we migrate to run those migrations to set the structure of a class in place but we dont need to run migrations again for just adding a function
-if we change the DB shit
+if we change the DB shit.
+we use shell and call models and from that the class of table and then we use object.save to save our changes and we use constructor to insert data
+we can create data directly using .create on objects instead of creating a python
+object first
+We can use the get method to query for data and filter for multiple rows
+https://docs.djangoproject.com/en/3.2/ref/models/querysets/#field-lookups for logical querying and use , in the parameter for and condition
+
+Book.objects.all()->to view data
+
+use Q from django , from django.db.models import Q
+Book.objects.filter(Q(rating__lte =5) | Q(author = 'j.k. rowling')) for or condition and use , after this for and condition and wrap in Q as well
+
+we can updates hit by accessing the specifc data element
+
+store shit in a variable so that we can use cached data in django
+
+
+
+
+
+
+
+
+
+
