@@ -108,11 +108,25 @@ we can updates hit by accessing the specifc data element
 
 store shit in a variable so that we can use cached data in django
 
+we overwrite save in class to save specific things automatic look at slug fields
 
+we use get_absolute url on slug field to update the url for index page
+we can make multiple model and see the course for info from here
+Book.objects.author.first_name
+Book.objects.get(author__first_name="J.K.")
+this way we access the forign key here and then acces firstname here
+btw linking is through an id self made by django
 
+addr1 = Address(street="Another Street", postal_code="67890",city="New York")
+jkr = Author.objects.get(first_name="J.K.")
 
+jkr.address=addr1
 
+ jkr.save()
 
+we use meta class inside model class to change behviour plural shit
+we have to use admin.py to change interface and register our models for 
+admin panel
 
 
 
