@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+  text-align: center;
+
+}
+
+
+.top{
+  background-color: #A7C4BC;
+  margin: 0 auto 0 auto;
+  padding-top: 100px;
+  position: relative;
+}
+
+/* display
+inline -> Uses like a span. Makes all it in 1 line and u cant change the width and height
+block -> works like paragraph. Can change Height and width but cannot be taken the words in on eline
+inline - block -> Both properties simaltanoeusly
+none -> Hides the display of the class it is written to
+*/
+
+.middle{
+
+
+}
+.bottom{
+
+}
+
+.top-cloud{
+  position: absolute;
+  right: 200px;
+  left: 200px;
+}
+
+.bottom-cloud{
+  position: absolute;
+  right: 300px;
+  
+}
