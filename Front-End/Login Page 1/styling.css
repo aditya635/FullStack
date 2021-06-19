@@ -5,7 +5,7 @@
 body{
   margin: 0;
   height: 100vh;
-  width: 100vh;
+  width: 220vh;
   overflow: hidden;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -18,11 +18,11 @@ body{
 
   .login-div{
     width: 430px;
-    height: 700px;
+    height: 600px;
     padding: 60px 35px 35px 35px;
     border-radius: 40px;
-    background-color: #ecf0f3;
-    box-shadow: 13px 13px 20px #cbced1 , -13px -13px 20px #fff;
+    background-color: #ECF0F3;
+    box-shadow: 13px 13px 20px #CBCED1,-13px -13px 20px #FFF;
     margin: auto auto;
     text-align: center;
   }
@@ -33,7 +33,7 @@ body{
     height: 100px;
     border-radius: 50%;
     margin: 0 auto;
-    box-shadow: 0px 0px 2px #5f5f5f , 0px 0px 0px -8px -8px 15px #fff;
+    box-shadow: 0px 0px 2px #5F5F5F , 0px 0px 0px -8px -8px 15px #FFF;
 
   }
 
@@ -65,14 +65,20 @@ body{
 
 
   }
-  .username,.password{
+  .username{
     margin-bottom: 30px;
     border-radius: 25%;
     box-shadow: inset 8px 8px 8px #cbced1 , inset -8px -8px -8px #fff;
 
   }
 
-  .sign-in{
+  .password{
+    margin-bottom: 30px;
+    border-radius: 25%;
+    box-shadow: inset 8px 8px 8px #cbced1 , inset -8px -8px -8px #fff;
+  }
+
+  .signin{
     outline: none;
     border: none;
     cursor: pointer;
@@ -85,14 +91,14 @@ body{
     color: #fff;
     text-align: center;
     background-color: #AC66CC;
-    box-shadow: 3px 3px 8px #b1b1b1 , -3px -3px 8px #fff;
+    box-shadow: 3px 3px 8px #B1B1B1 , -3px -3px 8px #fff;
     transition: all 0.5s;
 
   }
-  .sign-in:hover{
+  .signin:hover{
     background-color: #F6B8B8;
   }
-  .sign-in:active{
+  .signin:active{
     background-color: #88ef9e;
   }
 
