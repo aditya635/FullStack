@@ -128,6 +128,10 @@ we use meta class inside model class to change behviour plural shit
 we have to use admin.py to change interface and register our models for 
 admin panel
 
+Forms
+we basically setup a form we default a get request one we can specify for post request
+for a particular url we can send data through post but
+remember to add csrf token in templates and we can make
 
 
 
